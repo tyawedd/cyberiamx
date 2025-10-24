@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cyberia – Internet & Papelería</title>
+  <meta name="description" content="Impresiones, copias, escaneos y servicios digitales en Arandas, Jalisco. Sube tus archivos, cotiza por WhatsApp y recoge en tienda." />
+  <meta name="theme-color" content="#00344e" />
+
+  <!-- Open Graph / SEO básico -->
+  <meta property="og:title" content="Cyberia – Internet & Papelería" />
+  <meta property="og:description" content="Impresiones, copias, escaneos y servicios digitales en Arandas, Jalisco." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/logo-cyberia.png" />
+  <meta property="og:locale" content="es_MX" />
+
+  <!-- Favicon (actualiza los archivos cuando tengas las variantes) -->
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/favicon-180.png" sizes="180x180">
+
+  <!-- Tipografías Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#00344e;         /* fondo azul oscuro de marca */
+      --ink:#0f172a;        /* texto oscuro en tarjetas claras */
+      --fg:#f4f7fa;         /* texto claro en fondo oscuro */
+      --muted:#c9d3dc;
+      --brand:#3cb2eb;      /* cian brillante del logo */
+      --accent:#79e1ff;     /* acento auxiliar */
+      --card:#ffffff;       /* tarjetas */
+      --shadow:0 10px 30px rgba(2,8,23,.25);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1140px;margin-inline:auto;padding:20px}
+
+    /* HERO */
+    .hero{position:relative;min-height:68vh;display:grid;place-items:center;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(1200px 600px at 10% 10%, rgba(60,178,235,.22), transparent 60%), radial-gradient(1000px 500px at 90% 20%, rgba(121,225,255,.14), transparent 60%), linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));filter:saturate(115%)}
+    .hero-inner{position:relative;z-index:1;text-align:center;padding:32px}
+    .logo{display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px}
+    .logo img{height:56px;width:auto}
+    .title{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(34px,6vw,56px);margin:18px 0 10px}
+    .subtitle{max-width:740px;margin:0 auto 22px;color:#e6eef4;line-height:1.6}
+    .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:999px;font-weight:600;border:1px solid transparent;box-shadow:var(--shadow)}
+    .btn-primary{background:var(--brand);color:#001d28}
+    .btn-ghost{background:transparent;color:#e5f7ff;border-color:rgba(255,255,255,.18)}
+
+    /* TARJETAS Y SECCIONES */
+    section{padding:56px 0}
+    h2{font-family:'Poppins',sans-serif;text-align:center;font-weight:700;font-size:clamp(22px,4vw,32px);letter-spacing:.2px;margin:0 0 14px}
+    h3{font-family:'Poppins',sans-serif;margin:8px 0 6px}
+    p{line-height:1.7}
+    .grid{display:grid;gap:18px}
+    @media(min-width:768px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card);color:var(--ink);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .icon{font-size:28px}
+
+    /* BANNER PROMOS */
+    .promo{display:grid;place-items:center;padding:18px;border-radius:var(--radius);background:linear-gradient(135deg, rgba(60,178,235,.15), rgba(121,225,255,.15));border:1px solid rgba(255,255,255,.15)}
+
+    /* FOOTER */
+    footer{padding:40px 0;color:#d8e7ef;text-align:center;font-size:14px}
+
+    /* flotante WhatsApp */
+    .whatsapp{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;color:white;font-size:28px;box-shadow:var(--shadow)}
+  </style>
+</head>
+<body>
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="whatsapp" href="https://wa.me/523481083403?text=Hola,%20quiero%20hacer%20un%20pedido%20de%20impresiones" target="_blank" aria-label="Abrir WhatsApp">💬</a>
+
+  <header class="hero">
+    <div class="hero-inner container">
+      <div class="logo">
+        <!-- Reemplaza la ruta por tu logo real si usas otro nombre/carpeta -->
+        <img src="images/logo-cyberia.png" alt="Logo Cyberia - Internet & Papelería" />
+      </div>
+      <h1 class="title">Cyberia – Internet & Papelería</h1>
+      <p class="subtitle">Impresiones, copias, escaneos y servicios digitales. Sube tus archivos, confirmamos por WhatsApp y pasas a recoger.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+        <a class="btn btn-ghost" href="#subir">Subir archivos</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- PROMOS -->
+    <section>
+      <div class="promo">
+        <p>🎉 <b>Promociones:</b> 10% de descuento estudiantes · Martes 2x1 en copias B/N</p>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="grid cols-3">
+        <div class="card"><div class="icon">🖨️</div><h3>Impresiones</h3><p>B/N y color, carta y oficio. Calidad nítida y rápida.</p></div>
+        <div class="card"><div class="icon">📄</div><h3>Copias y escaneos</h3><p>Digitalizamos a PDF y te lo enviamos por WhatsApp o correo.</p></div>
+        <div class="card"><div class="icon">🎯</div><h3>Diseño rápido</h3><p>CV, portadas, carteles y tareas. ¡Te ayudamos a que luzcan!</p></div>
+        <div class="card"><div class="icon">🧾</div><h3>Trámites digitales</h3><p>CURP, actas, citas, RFC, constancias. Te guiamos paso a paso.</p></div>
+        <div class="card"><div class="icon">💻</div><h3>Internet y renta</h3><p>Computadoras con Internet y paquetería Office actualizada.</p></div>
+        <div class="card"><div class="icon">🔌</div><h3>Escolar y oficina</h3><p>Engargolado, anillado, laminado y consumibles básicos.</p></div>
+      </div>
+    </section>
+
+    <!-- SUBIR ARCHIVOS / COTIZACIÓN -->
+    <section id="subir">
+      <h2>Sube tus archivos o pide cotización</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Envío de archivos</h3>
+          <p>Usa nuestro formulario para subir documentos (PDF, JPG, DOCX). Te confirmamos por WhatsApp.</p>
+          <p>
+            <!-- TODO: Reemplaza el enlace por tu Google Form o Formspree -->
+            <a class="btn btn-primary" href="https://forms.gle/TU_FORM" target="_blank" rel="noopener">Abrir formulario</a>
+          </p>
+          <small>Tip: si pesa mucho, súbelo a Google Drive y pega el enlace.</small>
+        </div>
+        <div class="card">
+          <h3>Atención por WhatsApp</h3>
+          <p>¿Prefieres rápido? Escríbenos directo y te cotizamos al momento.</p>
+          <p><a class="btn btn-ghost" href="https://wa.me/523481083403?text=Hola,%20quiero%20cotizar%20una%20impresión" target="_blank" rel="noopener">Cotizar por WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEÑAS -->
+    <section id="reviews">
+      <h2>¿Nos recomiendas? ⭐</h2>
+      <div class="card">
+        <p>Tu opinión nos ayuda a mejorar y aparecer en Google Maps. ¡Gracias por tu apoyo!</p>
+        <!-- TODO: Reemplaza TU_ENLACE_DE_RESEÑA por el link corto de reseñas de tu perfil -->
+        <p><a class="btn btn-primary" href="https://g.page/r/TU_ENLACE_DE_RESEÑA/review" target="_blank" rel="noopener">Dejar mi reseña en Google</a></p>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN & HORARIOS -->
+    <section id="ubicacion">
+      <h2>¿Dónde estamos?</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Dirección y horarios</h3>
+          <p><b>Cyberia – Internet & Papelería</b><br> Constitución # 161, Col. Centro, Arandas, Jalisco<br> C.P. 47180</p>
+          <ul>
+            <li>Lun–Vie: 11:00–21:00</li>
+            <li>Sáb: 11:00–18:00</li>
+            <li>Dom: 12:00–15:00</li>
+          </ul>
+          <p><a class="btn btn-ghost" href="https://wa.me/523481083403" target="_blank" rel="noopener">Escribir por WhatsApp</a></p>
+        </div>
+        <div class="card">
+          <h3>Mapa</h3>
+          <div style="overflow:hidden;border-radius:12px;box-shadow:var(--shadow)">
+            <iframe title="Mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.6300111626556!2d-102.35019962568677!3d20.7077078987299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84294b883ed05309%3A0x1c97c406284235a!2sCyberia%20-%20Internet%20%26%20Papeler%C3%ADa!5e1!3m2!1sen!2smx!4v1761273867982!5m2!1sen!2smx" width="100%" height="280" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Cyberia – Internet & Papelería · Arandas, Jalisco</div>
+  </footer>
+
+  <script>
+    // Año automático
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Scroll suave para anclajes internos
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href');
+        if(id.length>1){
+          e.preventDefault();
+          document.querySelector(id)?.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
